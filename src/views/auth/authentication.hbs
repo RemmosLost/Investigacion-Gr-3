@@ -1,0 +1,48 @@
+<main>
+         <!-- clase contenedora-->
+        <div class="contenedor__todo">
+
+            <div class="caja__trasera">
+                <div class="caja__trasera_login">
+                    <!-- h3 coloca un texto-->
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <!-- p es una etiqueta-->
+                    <p>Inicia sesion para entrar en la pagina</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesion </button>
+                </div>
+                <div class="caja__trasera_register">
+                    <!-- h3 coloca un texto-->
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <!-- p es una etiqueta-->
+                    <p>Registrarte para que puedas iniciar sesion</p>
+                    <button id="btn__registrarse">Registrarse</button>
+                </div>      
+            </div>
+            <!--Formulario de login y Registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="/auth/login" method="POST" class="formulario__login">
+
+                    <h2> Iniciar Sesion</h2>
+                    <input type="text" placeholder="Correo Electronico" name="email">
+                    <input type="password"placeholder="Contraseña" name= "password">
+                    <button>Entrar</button>
+                    
+                </form>
+                <!--Registro-->
+
+                <!--el codigo en el action es lo que va a ejecutar el boton entrar-->
+                <!--Post es el metodo por el cual se van a enviar los datos, por default es el metodo GET-->
+                <form action="/auth/account" method="POST" class="formulario__register">
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombre " name="name">
+                    <input type="text" placeholder="Apellido" name="lastname">
+                    <input type="text" placeholder="Correo Electronico" name="email">
+                    <input type="password" placeholder="Contraseña" name="password">
+                    <!--<input type="text" placeholder="Admin" name="admin">-->
+                    <button>Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="/js/script.js"></script>

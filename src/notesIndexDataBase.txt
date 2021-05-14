@@ -1,0 +1,2 @@
+CREATE INDEX `noteByUser` ON `prototype`(type,email);
+CREATE INDEX `notesIndex` ON `prototype`(type,nid);
